@@ -1,3 +1,5 @@
-.btn{
-    text-decoration: none;
-}
+
+    /* Modify the backgorund color */ 
+.navbar-custom { 
+	background-color: lightgreen; 
+} 
