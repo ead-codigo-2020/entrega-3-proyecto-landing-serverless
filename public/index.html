@@ -1,12 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
-<script src="main.js"></script>
-
-<link rel="stylesheet" href="style.css">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -17,37 +11,71 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- carga de fuente -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-  
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
   <title>Serverless</title>
 </head>
 
 <body>
   <!--Inicio navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-    <a style="font-family: IBM Plex Mono;" class="navbar-brand" href="#">Serverless</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="">Serverless</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav nav ml-auto">
-        <a class="nav-link" href="#">¿Qué es?</a>
-        <a class="nav-link" href="#">Funciones</a>
-        <a class="nav-link" href="#">Arquitectura</a>
-        <a class="nav-link" href="#">Runtime</a>
-        <a class="nav-link" href="#">Database</a>
-        <a class="nav-link" href="#">Ventajas</a>
-        <a class="nav-link" href="#">Desventajas</a>
-        <a class="nav-link" href="#">Léxico</a>
-      </div>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav ml-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="#Proveedores">Proveedores</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Funciones</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Backend as a service</a>
+              <a class="dropdown-item" href="#">Function as a service</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Arquitectura</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Runtime</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Database</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Léxico</a>
+        </li>
+
+      </ul>
     </div>
     </div>
   </nav>
   <!--Fin navbar-->
-  
-  <!--Inicio slider-->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+  <!--Jumbotron-->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">¿Qué es serverless?</h1>
+      <p class="lead">Es un modelo de ejecución en el que el proveedor en la nube es responsable de ejecutar un fragmento de código mediante la asignación dinámica de los recursos.</p>
+      <hr class="my-7">
+      <p>En este modelo, la computación pasa finalmente a ser como la luz o el agua, un servicio que consumiremos en función de nuestras necesidades.</p>
+      <a class="btn btn-primary btn-light" href="#" role="button">Más detalles</a>
+    </div>
+  </div>
+  <!--Fin Jumbotron-->
+
+  <!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -72,36 +100,36 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-  <!--Fin del slider-->
+  </div>-->
 
   <!--Main-->
   <main>
-    <section>
+    <!--Proveedores-->
+    <section class="margen-section" id="Proveedores">
       <div class="container">
+        <h2 class="proveedores">Principales proveedores</h2>
         <div class="row">
 
           <div class="col-12 col-sm-4 text-center">
-            <img class="img-fluid" src="circle.png" alt="circulo">
-            <h5>Titulo</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur.</p>
+            <img class="img-fluid" src="amazon_icon.png" alt="amazon icon">
+            <h5>AWS: AWS Lambda</h5>
           </div>
 
           <div class="col-12 col-sm-4 text-center">
-            <img class="img-fluid" src="circle.png" alt="circulo">
-            <h5>Titulo</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur.</p>
+            <img class="img-fluid" src="microsoft_icon.png" alt="microsoft icon">
+            <h5>Microsoft Azure: Azure Functions</h5>
           </div>
 
           <div class="col-12 col-sm-4 text-center">
-            <img class="img-fluid" src="circle.png" alt="circulo">
-            <h5>Titulo</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur.</p>
+            <img class="img-fluid" src="google_cloud_functions.png" alt="google icon">
+            <h5>Google Cloud: Cloud Functions</h5>
           </div>
 
         </div>
       </div>
     </section>
+    <!--Fin proveedores-->
+
   </main>
   <!--Main-->
 

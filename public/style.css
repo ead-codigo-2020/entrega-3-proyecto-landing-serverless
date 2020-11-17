@@ -1,5 +1,69 @@
+html {
+  scroll-behavior: smooth;
+}
 
-    /* Modify the backgorund color */ 
-.navbar-custom { 
-	background-color: lightgreen; 
-} 
+body {
+    font-family: 'IBM Plex Mono';
+}
+
+.margen-section {
+    padding: 100px 0;
+}
+
+.navbar {
+    background-color: #ff4f5a !important;
+}
+
+.navbar .navbar-brand {
+    font-family: "IBM Plex Mono";
+    font-weight: 600;
+    color: #ececec;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ececec;
+}
+
+.navbar .navbar-nav li a {
+    color: #ececec !important;
+    font-family: "IBM Plex Mono";
+}
+
+.navbar .navbar-nav li a:hover {
+    color: #b9b9b9 !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    color: #000 !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    color: #ececec !important;
+    background-color: #ff4f5a;
+    opacity: 0.5;
+}
+
+.navbar-toggler {
+    color: #ececec;
+}
+
+.jumbotron {
+    background-color: #ff4f5a;
+    color: #ececec;
+    margin: auto;
+}
+
+.display-4 {
+    font-weight: 700;
+}
+
+.proveedores {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.img-fluid {
+    width: 150px;
+    padding-bottom: 20px;
+}
+
