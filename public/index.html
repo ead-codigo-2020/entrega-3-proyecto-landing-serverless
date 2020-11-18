@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="main.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
   <title>Serverless</title>
 </head>
 
@@ -23,7 +22,7 @@
   <!--Inicio navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-    <a class="navbar-brand" href="">Serverless</a>
+    <a class="navbar-brand" href="#Home">Serverless</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,6 +31,9 @@
       <ul class="navbar-nav nav ml-auto">
 
         <li class="nav-item active">
+          <a class="nav-link" href="#Ventajas">Ventajas</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#Proveedores">Proveedores</a>
         </li>
 
@@ -48,12 +50,6 @@
           <a class="nav-link" href="#">Arquitectura</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Runtime</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Database</a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link" href="#">Léxico</a>
         </li>
 
@@ -64,6 +60,7 @@
   <!--Fin navbar-->
 
   <!--Jumbotron-->
+  <section id="Home">
   <div class="jumbotron">
     <div class="container">
       <h1 class="display-4">¿Qué es serverless?</h1>
@@ -73,10 +70,14 @@
       <a class="btn btn-primary btn-light" href="#" role="button">Más detalles</a>
     </div>
   </div>
+  </section>
   <!--Fin Jumbotron-->
 
+  <!--Slider-->
+  <section id="Ventajas">
+  <div class="container">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <h1 class="ventajas__txt">Ventajas</h1>
+    <h2 class="ventajas__txt">¿Por qué implementar serverless?</h2>
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -84,13 +85,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/imgs/illust/i1.svg" class="d-block w-80" alt="Ventajas">
+        <img src="i1.svg" class="d-block w-80" alt="Ventajas">
       </div>
       <div class="carousel-item">
-        <img src="/imgs/illust/i2.svg" class="d-block w-80" alt="Ventajas">
+        <img src="i2.svg" class="d-block w-80" alt="Ventajas">
       </div>
       <div class="carousel-item">
-        <img src="/imgs/illust/i3.svg" class="d-block w-80" alt="ventajas">
+        <img src="i3.svg" class="d-block w-80" alt="ventajas">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -102,8 +103,10 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  </div>
+  </section>
+  <!--Fin slider-->
 
-  <!--Main-->
   <main>
     <!--Proveedores-->
     <section class="margen-section" id="Proveedores">
@@ -112,21 +115,30 @@
         <div class="row">
 
           <div class="col-12 col-sm-4 text-center">
-            <img class="img-fluid" src="amazon_icon.png" alt="amazon icon">
-            <h5>AWS: AWS Lambda</h5>
+            <img class="img-fluid" src="aws_icono.png" alt="amazon icon">
           </div>
 
           <div class="col-12 col-sm-4 text-center">
-            <img class="img-fluid" src="microsoft_icon.png" alt="microsoft icon">
-            <h5>Microsoft Azure: Azure Functions</h5>
+            <img class="img-fluid" src="microsoft_azure_icono.png" alt="microsoft icon">
           </div>
 
           <div class="col-12 col-sm-4 text-center">
-            <img class="img-fluid" src="google_cloud_functions.png" alt="google icon">
-            <h5>Google Cloud: Cloud Functions</h5>
+            <img class="img-fluid" src="google_platform_icono.png" alt="google icon">
           </div>
 
+          <div class="col-12 col-sm-4 text-center">
+            <img class="img-fluid" src="kuebeless_icono.png" alt="google icon">
+          </div>
+
+          <div class="col-12 col-sm-4 text-center">
+            <img class="img-fluid" src="ibm_openwhisk_icono.png" alt="google icon">
+          </div>
+        
+          <div class="col-12 col-sm-4 text-center">
+            <img class="img-fluid" src="spotinst_icono.png" alt="google icon">
+          </div>
         </div>
+
       </div>
     </section>
     <!--Fin proveedores-->
