@@ -17,20 +17,20 @@ body {
 .navbar .navbar-brand {
     font-family: "IBM Plex Mono";
     font-weight: 600;
-    color: #ececec;
+    color: #fff;
 }
 
 .navbar .navbar-brand:hover {
-    color: #ececec;
+    color: #fff;
 }
 
 .navbar .navbar-nav li a {
-    color: #ececec !important;
+    color: #fff !important;
     font-family: "IBM Plex Mono";
 }
 
 .navbar .navbar-nav li a:hover {
-    color: #b9b9b9 !important;
+    color: #ececec !important;
 }
 
 .navbar .nav-item .dropdown-menu .dropdown-item {
@@ -51,15 +51,30 @@ body {
     background-color: #ff4f5a;
     height: 700px;
     color: #ececec;
+    margin-bottom: -2%;
 }
 
-.ilustracion-jumbotron {
-    display: flex;
+.jumbotron img {
+    margin-bottom: 15%;
 }
 
 .display-4 {
     font-weight: 700;
     margin-top: 5%;
+}
+
+.arquitectura {
+    background-color: #fff;
+}
+
+.arquitectura img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 50px;
+    padding-top: 200px;
 }
 
 .proveedores_txt {
@@ -107,4 +122,14 @@ body {
 
 .margen-section .btn {
     background-color: #ff4f5a !important;
+}
+
+/*Footer*/
+.page-footer {
+    color: #d8d8d8;
+}
+
+.footer-copyright {
+    background-color: #ff4f5a;
+    color: #fff;
 }
