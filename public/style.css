@@ -178,9 +178,19 @@ padding-top: 10%;
     padding-right: 35%;
     padding-top: 0%;
     text-align: center;
-}
+    }
+    .btn-danger {
+        color: #fff;
+        background-color: #ff4f5a;
+        border-color: #ff4f5a;
+    }
 
 .accordion{
     padding-top: 5%;
     padding-bottom: 5%;
+}
+/*lexico*/
+
+.card-body{
+    text-align: left;
 }
