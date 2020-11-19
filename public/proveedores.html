@@ -11,9 +11,6 @@
   <!-- carga de fuente -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
-  <!--Scroll reveal-->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="main.js"></script>
@@ -22,10 +19,9 @@
 </head>
 <body>
      <!--Inicio navbar-->
-     <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-    <a class="navbar-brand" href="index.html">Serverless</a>
+    <a class="navbar-brand" href="">Serverless</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,23 +33,32 @@
           <a class="nav-link" href="#Proveedores">Proveedores</a>
         </li>
 
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Funciones</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Backend as a service</a>
+              <a class="dropdown-item" href="#">Function as a service</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#Arquitectura">Arquitectura</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#Ventajas">Ventajas</a>
+          <a class="nav-link" href="#">Arquitectura</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Proveedores">Proveedores</a>
+          <a class="nav-link" href="#">Runtime</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#Lexico">Léxico</a>
+          <a class="nav-link" href="#">Database</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Léxico</a>
+        </li>
+
       </ul>
     </div>
     </div>
   </nav>
-</header>
   <!--Fin navbar-->
 
 
@@ -61,169 +66,15 @@
 <div class="jumbotron__proveedores jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Proveedores</h1>
-      <p class="lead">Exsite una variedad de proovedores que ofrecen este 
-        tipo de funciones como servicio (FaaS). </p>
+      <p class="lead">Es un modelo de ejecución en el que el proveedor 
+          en la nube es responsable de ejecutar un fragmento de código 
+          mediante la asignación dinámica de los recursos.</p>
       
-      <p>A continuación encontrarás algunos de los más utilizados:</p>
+      <p>En este modelo, la computación pasa finalmente a ser como la luz o el agua, un servicio que consumiremos en función de nuestras necesidades.</p>
       
     </div>
   </div>
-
   <!--Fin Jumbotron-->
 
-  <!--servicios scroll-->
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <img src="/imgs/plogos/awslambdaArtboard 1.svg" alt="logoawslambda" width="80%">
-      </div>
-      <div class="col provtxt ml-5">
-       <h2>AWS Lambda</h2>
-       <p>AWS Lambda es un servicio informático que permite ejecutar código sin 
-         aprovisionar ni administrar servidores. AWS Lambda ejecuta el código solo 
-         cuando es necesario, y se escala de manera automática, pasando de pocas
-          solicitudes al día a miles por segundo. Solo se paga el tiempo de 
-          computación que se consume; no hay ningún cargo mientras el código no se ejecuta.</p>
-       <a href="https://docs.aws.amazon.com/es_es/lambda/latest/dg/welcome.html"
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="w-100">
-      </div>
-      <div class="col provtxt ml-5">
-        <h2>Microsoft Azure</h2>
-        <p>La plataforma Azure está compuesta por más de 200 productos y servicios
-           en la nube diseñados para ayudarle a dar vida a nuevas soluciones que
-            permitan resolver las dificultades actuales y crear el futuro. Cree, ejecute 
-            y administre aplicaciones en varias nubes, en el entorno local y en el perímetro,
-             con las herramientas y los marcos que prefiera.</p>
-        <a href="https://azure.microsoft.com/es-es/overview
-        /what-is-azure/?ef_id=Cj0KCQiAhs79BRD0ARIsAC6XpaVb35_
-        2sK-rTIZlxltgSi2RZU9zFe6eJHIB1srMJgfqB59uGHvTpH4aAoRNEALw_wcB%3A
-        G%3As&OCID=AID2100020_SEM_Cj0KCQiAhs79BRD0ARIsAC6XpaVb35_2sK-rTIZlxltgS
-        i2RZU9zFe6eJHIB1srMJgfqB59uGHvTpH4aAoRNEALw_wcB%3AG%3As"
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="col">
-       <img src="/imgs/plogos/microsoftazureArtboard 1.svg" alt="logomicrosoftazure" width="80%">
-      </div>
-      <div class="w-100"></div>
-      <div class="col">
-        <img src="/imgs/plogos/googlecfArtboard 1.svg" alt="Logogooglecloudfunctions" width="80%">
-      </div>
-      <div class="col provtxt ml-5">
-        <h2>Google Cloud Functions</h2>
-        <p>Google Cloud Functions es la solución de procesamiento sin servidores de
-           Google para crear aplicaciones controladas por eventos. Es un producto conjunto
-            del equipo de Google Cloud Platform y el equipo de Firebase.</p>
-        <a href="https://firebase.google.com/docs/functions/functions-and-firebase#:~:
-        text=Google%20Cloud%20Functions%20is%20Google's,for%20creating%20event%2Ddriven%2
-        0applications.&text=For%20Google%20Cloud%20Platform%20developers,for%20and%20respo
-        nding%20to%20events."
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="w-100"></div>
-      <div class="col provtxt ml-5">
-        <h2>Spotinst</h2>
-        <p>Spotinst Elastigroup es un servicio de escalado de aplicaciones. 
-          Similar a los grupos de Auto Scaling de Amazon Elastic Compute Cloud 
-          (Amazon EC2), Spotinst Elastigroup está diseñado para optimizar el rendimiento y
-           los costos, aprovechando instancias de Spot en combinación con instancias reservadas
-            y bajo demanda.</p>
-        <a href="https://spot.io/"
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="col">
-        <img src="/imgs/plogos/spotinstArtboard 1.svg" alt="Logospotinst" width="80%">
-      </div>
-      <div class="w-100">
-      </div>
-      <div class="col">
-        <img src="/imgs/plogos/apacheopenwhiskArtboard 1.svg" alt="Logoapacheopenwhisk" width="80%">
-      </div>
-      <div class="col provtxt ml-5">
-        <h2>Apache OpenWhisk</h2>
-        <p>Apache OpenWhisk es una plataforma sin servidor distribuida de código abierto que ejecuta
-           funciones (fx) en respuesta a eventos a cualquier escala. OpenWhisk administra la 
-           infraestructura, los servidores y el escalado utilizando contenedores Docker para que 
-           pueda concentrarse en crear aplicaciones asombrosas y eficientes.</p>
-        <a href="https://openwhisk.apache.org/"
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="w-100"></div>
-      <div class="col provtxt ml-5">
-        <h2>Cloudflare</h2>
-        <p>Cloudflare es una red global en la nube, inteligente e integrada, 
-          que proporciona seguridad, funcionamiento y fiabilidad para todas las 
-          aplicaciones de Internet, la infraestructura de red y los equipos.</p>
-        <a href="https://www.cloudflare.com/es-es/"
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="col">
-        <img src="/imgs/plogos/cloudflareArtboard 1.svg" alt="Logocloudflare" width="80%">
-      </div>
-      <div class="w-100"></div>
-      <div class="col">
-        <img src="/imgs/plogos/firebaseArtboard 1.svg" alt="Logofirebase" width="80%">
-      </div>
-      <div class="col provtxt ml-5">
-        <h2>Firebase</h2>
-        <p>Herramientas de Google cuya finalidad es desarrollar la infraestructura
-          de aplicaciones, mejorar la calidad de estas y contribuir al crecimiento de un negocio
-        </p>
-        <a href="https://firebase.google.com/"
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="w-100">
-      </div>
-      <div class="col provtxt ml-5">
-        <h2>knative</h2>
-        <p>Los componentes Knative se construyen sobre Kubernetes, abstrayendo 
-          los detalles complejos y permitiendo a los desarrolladores centrarse
-           en lo que importa. Construido mediante la codificación de las mejores 
-           prácticas compartidas por implementaciones exitosas del mundo real, 
-           Knative resuelve las partes "aburridas pero difíciles" de implementar y 
-           administrar servicios nativos en la nube para que usted no tenga que hacerlo.</p>
-        <a href="https://knative.dev/"
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="col">
-        <img src="/imgs/plogos/knativeArtboard 1.svg" alt="Logoknative" width="80%">
-      </div>
-      <div class="w-100"></div>
-      <div class="col">
-        <img src="/imgs/plogos/kubelessArtboard 1.svg" alt="Logokubeless" width="80%">
-      </div>
-      <div class="col provtxt ml-5">
-        <h2>Kubeless</h2>
-        <p>Kubeless es un marco sin servidor nativo de Kubernetes que le permite implementar 
-          pequeños fragmentos de código (funciones) sin tener que preocuparse por la infraestructura 
-          subyacente. Está diseñado para implementarse sobre un clúster de Kubernetes y aprovechar todas
-           las excelentes primitivas de Kubernetes.</p>
-        <a href="https://kubeless.io/"
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="w-100"></div>
-      <div class="col provtxt ml-5">
-        <h2>Openfaas</h2>
-        <p>OpenFaaS® simplifica la implementación de las funciones y el código
-           existente en Kubernetes</p>
-        <a href="https://www.openfaas.com/"
-        type="button" target="_blank" class="btn btn-outline-secondary btn-sm" >Sitio</a>
-      </div>
-      <div class="col">
-        <img src="/imgs/plogos/openfaasArtboard 1.svg" alt="Logoopenfaas" width="80%">
-      </div>
-      <div class="w-100">
-      </div>
-              
-    </div>
-  </div>
-
-  <!--script de aparición-->
-  <script>
-    ScrollReveal().reveal('.col')
-
-   
-  </script>
 </body>
 </html>

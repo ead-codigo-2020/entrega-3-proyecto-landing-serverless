@@ -49,13 +49,7 @@ body {
 
 .jumbotron {
     background-color: #ff4f5a;
-    height: 700px;
     color: #ececec;
-    margin-bottom: -2%;
-}
-
-.jumbotron img {
-    margin-bottom: 15%;
 }
 
 .display-4 {
@@ -67,14 +61,10 @@ body {
     background-color: #fff;
 }
 
-.arquitectura img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: auto;
-    padding-bottom: 50px;
-    padding-top: 200px;
+.card {
+    margin-top: 50px;
+    margin: 10px;
+    padding: 30px;
 }
 
 .proveedores_txt {
@@ -107,7 +97,7 @@ body {
     align-items: center;
     }
 
-    .btn-circle.btn-xl {
+.btn-circle.btn-xl {
     width: 70px;
     height: 70px;
     padding: 10px 16px;

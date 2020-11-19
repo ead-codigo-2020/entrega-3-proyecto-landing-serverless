@@ -57,18 +57,54 @@
         <p class="lead">Es un modelo de ejecución en el que un proveedor en la nube es responsable de ejecutar un fragmento de código mediante la asignación dinámica de los recursos.</p>
         <hr class="my-7">
         <p>En este modelo, la computación pasa finalmente a ser como la luz o el agua, un servicio que consumiremos en función de nuestras necesidades.</p>
-        <a class="btn btn-primary btn-light" href="#definicio.html" role="button">Más detalles</a>
-          <img src="i4.svg" width="430px" style="float:right" alt="Ilustracion 4">
+        <a class="btn btn-primary btn-light" href="#definicion.html" role="button">Más detalles</a>
       </div>
     </div>
   </section>
   <!--Fin Jumbotron-->
 
+  <main>
   <!--Arquitectura-->
-  <section class="arquitectura" id="Arquitectura">
+  <section id="Arquitectura">
     <div class="container">
-      <h2 class="titulos__txt text-center">Arquitectura serverless</h2>
-      <img src="esquema_arquitectura_serverless.svg" alt="Esquema">
+      <div class="row">
+
+
+
+        <div class="col-sm-6 text-md-left">
+          <div class="card card-primary shadow-lg">
+            <h4 class="cache-web-titulo">Arquitectura</h4>
+            <p class="cache-web-text">Una arquitectura Serverless nos permite olvidarnos de tener 
+              que gestionar y mantener toda la infraestructura de un servidor para nuestra web o app. 
+              Cuando desarrollamos una aplicación ya sea web, mobile o de escritorio, la mayoría de 
+              las veces necesitamos almacenar o gestionar información en un servidor. Ahí está nuestra 
+              base de datos, nuestro servidor web… El problema no es montar toda la infraestructura si 
+              no toda la gestión y mantenimiento que ello conlleva. Parches de seguridad, actualizaciones 
+              con nuevas funcionalidades, control de acceso a usuarios… como vemos, y sabemos, mantener 
+              todo esto no es tarea sencilla.</p>
+              <hr>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalweb">Saber más</button>
+          </div>
+        </div>
+
+      
+        <div class="col-sm-6 text-md-left">
+          <div class="card card-inverse card-primary shadow-lg">
+            <div class="card-body">
+              <h4 class="card-title text-center">Arquitectura tradicional</h4>
+              <img src="arquitectura_tradicional.svg" alt="arquitectura tradicional">
+            </div>
+          </div>
+
+          <div class="card card-inverse card-primary card-tradicional shadow-lg">
+            <div class="card-body">
+              <h4 class="card-title text-center">Arquitectura serverless</h4>
+              <img src="arquitectura_serverless.svg" alt="arquitectura serverless">
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
   <!--Fin arquitectura-->
@@ -107,91 +143,82 @@
   </section>
   <!--Fin slider-->
 
-  <main>
-    <!--Proveedores-->
-    <section class="margen-section" id="Proveedores">
-      <div class="container">
-        <h2 class="proveedores_txt">Principales proveedores</h2>
-        <div class="row">
-          <div class="col-12 col-sm-4 text-center">
-            <a href="https://aws.amazon.com/es/"><img class="proveedor" src="aws_icono.png" alt="amazon icon"></a>
-          </div>
-
-          <div class="col-12 col-sm-4 text-center">
-            <a href="https://azure.microsoft.com/es-es/"><img class="proveedor" src="microsoft_azure_icono.png" alt="microsoft icon"></a>
-          </div>
-
-          <div class="col-12 col-sm-4 text-center">
-            <a href="https://cloud.google.com/"><img class="proveedor" src="google_platform_icono.png" alt="google icon"></a>
-          </div>
-
-          <div class="col-12 col-sm-4 text-center">
-            <a href="https://kubeless.io/"><img class="proveedor" src="kuebeless_icono.png" alt="kubeless icon"></a>
-          </div>
-
-          <div class="col-12 col-sm-4 text-center">
-            <a href="https://www.ibm.com/cl-es/cloud"><img class="proveedor" src="ibm_openwhisk_icono.png" alt="ibm openwhisk icon"></a>
-          </div>
-        
-          <div class="col-12 col-sm-4 text-center">
-            <a href="https://spot.io/"><img class="proveedor" src="spotinst_icono.png" alt="spotinst icon"></a>
-          </div>
+  <!--Proveedores-->
+  <section class="margen-section" id="Proveedores">
+    <div class="container">
+      <h2 class="proveedores_txt">Principales proveedores</h2>
+      <div class="row">
+        <div class="col-12 col-sm-4 text-center">
+          <a href="https://aws.amazon.com/es/"><img class="proveedor" src="aws_icono.png" alt="amazon icon"></a>
         </div>
 
-       <div class="text-center">
-          <a href="proveedores.html" type="button" class="btn btn-light btn-circle btn-xl">
-            <svg width="4em" height="4em" viewBox="4 3 20 20" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-            </svg>
-          </a>
+        <div class="col-12 col-sm-4 text-center">
+          <a href="https://azure.microsoft.com/es-es/"><img class="proveedor" src="microsoft_azure_icono.png" alt="microsoft icon"></a>
+        </div>
+
+        <div class="col-12 col-sm-4 text-center">
+          <a href="https://cloud.google.com/"><img class="proveedor" src="google_platform_icono.png" alt="google icon"></a>
+        </div>
+
+        <div class="col-12 col-sm-4 text-center">
+          <a href="https://kubeless.io/"><img class="proveedor" src="kuebeless_icono.png" alt="kubeless icon"></a>
+        </div>
+
+        <div class="col-12 col-sm-4 text-center">
+          <a href="https://www.ibm.com/cl-es/cloud"><img class="proveedor" src="ibm_openwhisk_icono.png" alt="ibm openwhisk icon"></a>
+        </div>
+        
+        <div class="col-12 col-sm-4 text-center">
+          <a href="https://spot.io/"><img class="proveedor" src="spotinst_icono.png" alt="spotinst icon"></a>
         </div>
       </div>
-    </section>
-    <!--Fin proveedores-->
+
+      <div class="text-center">
+        <a href="proveedores.html" type="button" class="btn btn-light btn-circle btn-xl">
+          <svg width="4em" height="4em" viewBox="4 3 20 20" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--Fin proveedores-->
 
   </main>
-  <!--Main-->
+  <!--Fin main-->
 
-<!-- Footer -->
-<footer class="page-footer font-small unique-color-dark">
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark">
 
   <div style="background-color: #161616;">
     <div class="container">
 
-      <!-- Grid row-->
       <div class="row py-4 d-flex align-items-center">
 
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"></div>
+
+        <div class="container text-center text-md-left mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="font-weight-bold">Serverless</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-top: 1px solid rgb(255, 255, 255);">
+              <p>Este código HTML es un proyecto landing para el ramo "Diseño desde el código" de la Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso.</p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="font-weight-bold">Contacto</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-top: 1px solid rgb(255, 255, 255);">
+              <p>Ayrton Pereira</p>
+              <a href="@ayrton.pereira.c@mail.pucv.cl">ayrton.pereira.c@mail.pucv.cl</a>
+              <hr style="border-top: 1px solid rgb(255, 255, 255);">
+              <p>Bastián González</p>
+              <a href="@bastian.gonzalez.r@mail.pucv.cl">bastian.gonzalez.r@mail.pucv.cl</a>
+            </div>
+          </div>
         </div>
-
-
-  <div class="container text-center text-md-left mt-5">
-    <div class="row mt-3">
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-        <h6 class="font-weight-bold">Serverless</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-top: 1px solid rgb(255, 255, 255);">
-        <p>Este código HTML es un proyecto landing para el ramo "Diseño desde el código" de la Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso.</p>
-      </div>
-
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-        <h6 class="font-weight-bold">Contacto</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-top: 1px solid rgb(255, 255, 255);">
-        <p>Ayrton Pereira</p>
-        <a href="@ayrton.pereira.c@mail.pucv.cl">ayrton.pereira.c@mail.pucv.cl</a>
-        <hr style="border-top: 1px solid rgb(255, 255, 255);">
-        <p>Bastián González</p>
-        <a href="@bastian.gonzalez.r@mail.pucv.cl">bastian.gonzalez.r@mail.pucv.cl</a>
       </div>
     </div>
   </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
   <div class="footer-copyright text-center py-3">© 2020 Serverless. Todos los derechos reservados.</div>
 </footer>
 <!-- Footer -->
